@@ -14,7 +14,6 @@ export class HousingService {
     return (await data.json()) ?? {};
   }
   submitApplication(firstName: string, lastName: string, email: string) {
-    // tslint:disable-next-line
-    console.log(firstName, lastName, email);
+    alert(`${firstName} ${lastName} ${email} has applied.`);
   }
 }
